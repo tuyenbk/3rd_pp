@@ -1,0 +1,105 @@
+\documentclass[NewProceedings, InsideFigs]{ascelike} %NewProceedings, Journal
+
+%\usepackage{endfloat}
+
+%include package for inserting picture
+\usepackage{graphicx}%insert image
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{images/}}%folder contains images
+%include package for inserting multiple pictures
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[T1]{fontenc}
+\usepackage{array}%for table with fixed width
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+% 
+\title{Supervised machine learning method to learning civil project ontology from texts}
+%
+\author{
+Tuyen Le
+\thanks{
+Ph.D. Student, Department of Civil, Construction and Environmental Engineering, Iowa State University. Ames, IA50011. E-mail: ttle@iastate.edu.},
+\and
+David Jeong%
+\thanks{Associate Professor, Department of Civil, Construction and Environmental Engineering, Iowa State University. Ames, IA 50011. E-mail: djeong@iastate.edu.}
+ }
+ 
+%aa
+\maketitle
+%
+\begin{center}
+(To be submitted to the Journal of Computing in Civil Engineering) 
+\end{center}
+%
+\begin{abstract} %150-175 words (as required by ASCE)
+ 
+\end{abstract}
+%
+\KeyWords{Ontology, NLP, model view, interoperability, data exchange, highway}
+%
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%good terms and phrases:
+
+%adj: nonhierarchical, superior, well-defined; foreseeable; rigid, flexible, empirical 
+
+%sentence strucutre:  this is evidenced by the accelerating emergence of ...; 
+
+%noun: challenges, barrier, hinders, obstacles, impediment; that approximate concepts; extraction=deduction=acquisition; broad spectrum; overtake these technical and economic challenges; bottleneck; data crreation and utilization; in the midst of planning; interpretation; 
+
+%verb: emcombass; tackle, foster, amplified; simplified; detect; aggregate; 
+
+%sentence template: tailored with respect to their context; includes three phases, namely AA, BB and CC; at such places as parks, fairgounds or town spuares; case-specific developments; area of interests; incrementally built; inexpensive and easy-to-use testing device; time and cost-efficient way; research community; one of..since then is the; RDF structure..to make assertion about a resource; syntax-centered NLP;  such as A, B, etc.; ..is in it's reliance upon the presence..which is..; with the objectives of disambiguation; has triggered a mounting awareness; to be the main impediment to the progess; ..start point for deducing other truth; lastly; there is a large body of research on; see e.g. [2], [14] and [32]; the former, the latter; rigorously formalized; backbone strucutre of st; was opted to; Sections 4.5 and 4.6; (e.g., Neo4J, OrientDB, Titan); forthcoming year; well-designed process; is subject to do st; in turn means that; discussion by academics and professionals; some insights on planning, management, and control; strategic framework; in-depth project performance; in lieu of; 
+
+%term': empirical work; linguistic unit/term; 
+
+%axiomatic richness, formality of representation,  
+
+%the following expression denotes, is presented/defined as follows, this/below example shows, the snippet below presents, the following is the short description of the rule, an OWL ontology describing an ifcwindow class, these concepts and relationships can be encoded in the following RDF/XML fragment, is written in Turtle syntax/format:
+%The tool is meant to assess, 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}%900 words
+
+%research background, structured data vs unstructure data: easily to for searching, to be searched
+%Topic introduction, territory: centrality--> genearal background information 
+
+%Identify the niche: overall to one aspect to be addressed--> limitation in current state -->highlight the problem, raise general questions, propose general hypotheses --> emphasize the need (justify the need to address)
+
+%research hypothesis: 
+
+%Research objectives
+
+\section{Literature review} \label{sec:litrev} %2000 words
+%
+\section{Learning methodology} \label{sec:proposed_method} %4000 words
+%
+\subsection{Data collection}
+%how to collect data, how to clean data to get them readay for training model
+%aim text folow remained, flow direction. bottom down, 
+%remove heading (chapter, section, subsection), footnote, numerbing, bullets, hyperlink, url, 
+\subsection{Data training}
+%word2vec, brief introduction about word2vec
+%skip-gram model
+%how to modify the method of selecting conext words
+%java program
+%
+\section{Evaluation} \label{sec:val}
+
+%
+\section{Conclusions} \label{sec:conclns} 
+
+%bibliography
+\bibliography{3rd_paper}
+%
+%
+\end{document}
+
